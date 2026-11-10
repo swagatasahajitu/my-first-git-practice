@@ -1,0 +1,24 @@
+# some notes on the conversion applied to common_module_human_health_hazard_assessment_html.ftl
+# the table below is tab-stop separated and indicates search and replace strings
+Search  Replace
+<table border="1">  <table>
+<title>(.*?)</title> <caption>$1</caption>
+<th( align="center")?><\?dbfo bgcolor="(.{7})" \?>((.|\n)*?)</th>  <th style="background:$2;">$3</th>
+<emphasis role=["']bold["']>((.|\n)*?)</emphasis>  <b>$1</b>
+<emphasis role="underline">((.|\n)*?)</emphasis>  <u>$1</u>
+<emphasis role="HEAD-WoutNo">((.|\n)*?)</emphasis>   <span class="HEAD-WoutNo">$1</span>
+<emphasis role="(indent2?)">((.|\n)*?)</emphasis>   <span class="$1">$2</span>
+<ulink url="(.*?)">((.|\n)*?)</ulink>   <a ref="$1">$2</a>
+<tr align="center" valign="middle"><\?dbfo bgcolor="(.{7})" \?> <tr style="align-content:center;vertical-align:middle;background:$1;">
+<para role="(indent2?)">((.|\n)*?)</para>   <span class="$1">$2</span>
+<para role ?= ?"(\$\{role[12]?\})">((.|\n)*?)</para>  <span class="$1">$2</span>
+<para role="i6LiteralText">((.|\n)*?)</para>   <span class="i6LiteralText">$1</span>
+<para>((.|\n)*?)</para>   <p>$1</p>
+<formalpara>((.|\n)*?)</formalpara>   <p>$1</p>
+<td colspan="6" align="center"> <td colspan="6" style="align-content:center;">
+<tbody valign="middle"> <tbody style="vertical-align:middle;">
+<superscript>((.|\n)*?)</superscript> <sup>$1</sup>
+
+<command linkend="((.|\n)*?)</command> <a href="#$1</a>
+#formalpara  div
+#title(within formalpara)    <h1>

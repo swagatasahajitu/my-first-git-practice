@@ -1,0 +1,57 @@
+description: Harmonised Classification and Labelling report (CLH)
+documents:
+- SUBSTANCE
+- MIXTURE
+formats:
+- media_type: text/html
+  output_type: HTML
+  template: ''
+- media_type: application/docx
+  output_type: DOCX
+  template: ''
+main_ftl: 00_clh_main
+media_type: text/html
+working_contexts:
+- CLP_CLH
+- COMPLETE
+- COMPLETE_SUB
+- COMPLETE_MIX
+- R_COMPLETE
+- BIOC_ACTIVE_SUBSTANCE_FOR_MIXTURES
+- R_1-10_PC
+- R_1-10_PC_CAT
+- R_1-10_STD
+- R_1-10_STD_CAT
+- R_10-100
+- R_10-100_CAT
+- R_100-1000
+- R_100-1000_CAT
+- R_A15_REST
+- R_A15_REST_CAT
+- R_A15_SVHC
+- R_A15_SVHC_CAT
+- R_ABOVE_1000
+- R_ABOVE_1000_CAT
+- R_AUTH_APPL_CAT
+- R_AUTH_APPL
+- R_DU_NOTIF
+- R_DU_REPORT
+- R_INQUIRY
+- R_INT_JS_MBER
+- R_INT_JS_MBER_CAT
+- R_INT_ONSITE
+- R_INT_ONSITE_CAT
+- R_INT_TR_1-1000
+- R_INT_TR_1-1000_CAT
+- R_INT_TR_ABOVE_1000
+- R_INT_TR_ABOVE_1000_CAT
+- R_JS_MBER
+- R_JS_MBER_CAT
+- R_PPORD
+- R_SIA_NOTIF
+- R_SUB_EVAL
+- R_SUB_EVAL_CAT
+- CLP_ALTERNATIVE_NAME
+- CLP_NOTIF
+- BIOC_BIOCIDAL_PRODUCT
+- EU_PPP_ACTIVE_SUBSTANCE_APP
