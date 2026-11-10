@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<#import "../../common_modules/html/macros_common_general_html.ftl" as com>
+<#import "../../common_modules/html/macros_common_general_html.ftl" as com> rakhlam ar ki
 <@com.initializeMainVariables/>
 <#-- allow report to be generated from sub entity -->
 <#if subEntityUuid??><#assign subEntityKey = com.getSubEntityKey(subEntityUuid) />
